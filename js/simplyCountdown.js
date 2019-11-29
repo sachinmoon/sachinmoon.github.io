@@ -130,7 +130,7 @@
                 },
                 plural: true,
                 inline: false,
-                enableUtc: true,
+                enableUtc: false,
                 onEnd: function () {
                     return;
                 },
@@ -187,11 +187,11 @@
 
                 now = new Date();
                 if (parameters.enableUtc) {
-                    nowUtc = new Date(now.getFullYear(), now.getMonth(), now.getDate(),
-                        now.getHours(), now.getMinutes(), now.getSeconds());
-                    secondsLeft = (nowUtc.getTime() - targetDate) / 1000;
+                    nowUtc = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(),
+                        now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
+                    secondsLeft = (nowUtc.getTime() - targetDate.getTime()) / 1000;
                 } else {
-                    secondsLeft = (now.getTime() - targetDate) / 1000;
+                    secondsLeft = (now.getTime() - targetDate.getTime()) / 1000;
                 }
 
                 if (secondsLeft > 0) {
