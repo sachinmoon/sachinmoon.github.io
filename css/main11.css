@@ -1,0 +1,313 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* IMPORT colors stylesheet */
+@import url("colors/pink.css");
+@import url("wedding-bliss-bootstrap-skin.css");
+
+html {height: 100%!important; min-height: 100%!important;}
+
+body {
+	font-size: 16px;
+	color: #696262;
+	font-family: 'Droid Sans', sans-serif;
+	line-height: 26px;
+	background: url(../images/body-bg.jpg) repeat;
+	text-shadow:0px 0px 1px #fff;
+	height: 100%!important;
+}
+
+a {
+	-webkit-transition:color 0.2s ease-in;  
+	-moz-transition:color 0.2s ease-in;  
+	-o-transition:color 0.2s ease-in;  
+	transition:color 0.2s ease-in;
+   
+}
+a, a:hover, a:active, a:focus {
+	outline: 0;
+}
+
+img, iframe {
+	background-color: rgba(255, 255, 255, 0.5);
+    	border: 1px solid #FFFFFF;
+    	padding: 3px;
+    	width: 100%;
+}
+
+h1 {
+	font-size: 28px;
+	font-family: 'Cinzel',serif;
+	font-weight: bold;
+	margin-bottom: 1em;
+
+}
+h2 {
+	font-size: 25px;
+	font-family: 'Cinzel',serif;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+h3 {
+	font-size: 23px;
+	font-family: 'Cinzel',serif;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+h4 {
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'Cinzel',serif;
+	margin-bottom: 1em;
+}
+h5 {
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 1em;
+
+}
+h6 {
+
+}
+.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+
+#ourstoryphoto img, 
+#thebridesidephoto img, 
+#thegroomsidephoto img, 
+#weddinglocationphoto img, 
+#rsvpphoto img, 
+#blog1photo img, 
+#blog2photo img, 
+#gallery1photo img, 
+#gallery2photo img 
+#registryphoto img, 
+#guestbookphoto img {
+	position: absolute;
+	background-color: transparent;
+	border: none;
+	padding: 0px;
+	margin: 20px auto;
+}
+
+#countdown-1 {
+	border: 1px solid red;
+	width: 100%;
+	height: 200px;
+}
+
+/* HELPER classes */
+.clear {
+	clear: both;
+    	display: block;
+    	height: 0;
+   	overflow: hidden;
+    	visibility: hidden;
+}
+.alignright {
+	float: right;
+	margin: 10px 10px 10px 20px
+}
+.alignleft {
+	float: left;
+	margin: 10px 20px 10px 10px
+}
+
+.fakeheight {
+	height:100px;
+}
+.text-left {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+
+/* "parallax settings" 
+--------------------------------------------------------------------------------*/
+
+.parallax-background {
+    	background-position:center center;
+    	-webkit-background-size: cover !important; 
+    	-moz-background-size: cover !important;  
+    	-o-background-size: cover !important; 
+    	background-size: cover !important;
+	height: 300px;
+}
+
+.parallax-background.bgfixed {
+    	background-attachment: fixed !important;
+}
+
+
+/* "preloader" screen
+--------------------------------------------------------------------------------*/
+
+
+	.bghide {
+		
+	       position:fixed;
+		height:100%;
+		width:100%;
+		top: 0;
+		left: 0;
+	       z-index: 9999;
+	}
+
+	/* the timer */
+	.remaining {
+		color: #FFFFFF;
+	    	font-family: 'Great Vibes',cursive;
+	    	font-size: 91px;
+	    	line-height: 150px;
+	    	margin: 20px auto 60px;
+	    	text-align: center;
+		
+	}
+	#timer {
+		
+		overflow: visible;
+		width:40%;
+  		max-width: 960px;
+  		min-width: 600px;
+		margin: 0 auto;
+		z-index: 9999;
+		height: 300px;
+		
+	}
+	.counterwrapper {
+		width: 100%;
+		overflow: hidden;
+		
+		
+	}
+	.counterwrapper .aligncenter {
+    		margin: 0 auto;
+    		overflow: hidden;
+    		width: 338px;
+    		padding-bottom: 30px;
+	}
+	.counter {
+		height: 6em;
+		width: 6em;
+		border-radius: 100px;
+		background: #fff;
+		float: left;
+		margin-right: 1em
+	}
+	.daysleft {
+		font-size: 50px;
+		padding-top: 15px;
+		text-align: center;
+		line-height: 70px;
+		font-family: cinzel, arial;
+		text-align: center;
+	}
+	.counter h5 {
+		display: block;
+		margin-top: 20px;
+	       font-size: 13px;
+	       line-height: 18px;
+	       margin-bottom: 15px;
+	       text-align: center;
+	       color: #fff;
+	       text-transform: uppercase;
+	}
+
+
+
+
+
+/* "GALLERY MODEL 2" section
+--------------------------------------------------------------------------------*/
+
+	#gallery2 {
+		margin-bottom: 10em;
+		font-size: 15px;
+	}
+	
+
+	/* the header */
+	#gallery2photo {
+		background:url(../img/parallax/gallery2.jpg);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 300px;
+		height: 300px; 
+		margin: 0 auto; 
+		width: 100%; 
+		max-width: 1920px; 
+		margin-bottom: 50px;
+	}
+	
+
+
+	/* gallery container */
+	.gallery-container2 {
+		width: 100%;
+		margin:50px auto;
+		padding:0px 30px;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		overflow: hidden;
+
+
+	}
+	 
+	.megafolio-container2{  
+		width:100%; 
+	   	position:relative;
+	   	-moz-box-sizing: border-box;
+	   	box-sizing: border-box;
+	   	-webkit-box-sizing: border-box;
+	}
+
+	.gallery-container2 .mega-hover {
+		background-color: rgba(255,255,255, 0.7);
+		border-radius: 0;
+	}
+	.gallery-container2 .mega-hovertitle {
+		color: #725656;
+		text-transform: uppercase;
+		line-height: 20px;
+	}
+	.gallery-container2 .mega-hovertitle .mega-hoversubtitle {
+		font-style: italic;
+		color: #725656;
+		font-weight: bold;
+	}
+	.gallery-container2 .mega-entry .mega-entry-innerwrap {
+		/*border: 2px solid #fff;*/
+		border-radius: 0px; 
+		background-color: rgba(255, 255, 255, 0.5);
+		border: 1px solid #FFFFFF;
+		padding: 3px;
+	}
+	.gallery-container2 .mega-hover {
+		width: 98%;
+		height: 98%;
+	}
+
+	
+/* THE FOOTER
+--------------------------------------------------------------------------------*/
+	footer {
+		background: none repeat scroll 0 0 #FFFFFF;
+		color: #A5A5A5;
+		font-size: 12px;
+		padding: 10px 0 0;
+		text-align: center;
+	}
+	footer .names {
+		color: #725656;
+	    	padding-top: 10px;
+	    
+	}
